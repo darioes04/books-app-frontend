@@ -1,0 +1,41 @@
+<form
+  class="flex flex-col items-center space-y-4 w-full max-w-md mx-auto mt-6"
+  contact-form
+  [formGroup]="contactForm"
+  (ngSubmit)="onSubmit()"
+>
+  <input
+    type="text"
+    class="border p-2 rounded w-full"
+    placeholder="Título"
+    formControlName="title"
+  />
+
+  <input
+    type="text"
+    class="border p-2 rounded w-full"
+    placeholder="Autor"
+    formControlName="author"
+  />
+
+  <input
+    type="text"
+    class="border p-2 rounded w-full"
+    placeholder="ISBN"
+    formControlName="isbn"
+  />
+
+  <input
+    type="date"
+    class="border p-2 rounded w-full"
+    placeholder="Fecha de publicación"
+    formControlName="publishedDate"
+  />
+
+  <button
+    type="submit"
+    class="bg-blue-500 text-white px-6 py-2 mb-5 rounded hover:bg-blue-600"
+  >
+    Guardar Libro
+  </button>
+</form>
