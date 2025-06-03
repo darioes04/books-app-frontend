@@ -17,6 +17,7 @@ import { EditBookComponent } from './books/components/book-card/edit-book/edit-b
 import { BookCardComponent } from './books/components/book-card/book-card.component';
 import { TopBarComponent } from './books/components/top-bar/top-bar.component';
 import { SearchBarComponent } from './books/components/search-bar/search-bar.component';
+import { ThemeButtonComponent } from "./books/components/theme-button/theme-button.component";
 
 @Component({
   selector: 'app-root',
@@ -28,7 +29,9 @@ import { SearchBarComponent } from './books/components/search-bar/search-bar.com
     TopBarComponent,
     SearchBarComponent,
     SearchBarComponent,
-  ],
+    ThemeButtonComponent,
+    ThemeButtonComponent
+],
   templateUrl: './app.component.html',
 })
 export class AppComponent {
